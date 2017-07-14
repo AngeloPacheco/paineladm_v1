@@ -29,7 +29,7 @@
         </div>
     
         <div class="col-md-4 col-sm-4 col-xs-12">
-            <a class="links" href="{{url('painel/categorias')}}" title='Categorias de Produtos'>  
+            <a class="links" href="{{url('painel/categoria-produtos')}}" title='Categorias de Produtos'>  
                <div class="opcoes-configs">
                    <i class="fa fa-tags" aria-hidden="true" ></i>
                    <div class="titulo-configs">

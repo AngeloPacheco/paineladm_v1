@@ -16,7 +16,7 @@
 .painel-title{
     font-size: 1.5em;
     font-weight: bold;
-    margin-left: 105px;
+    margin-left: 95px;
 }
 /****/
 
@@ -88,40 +88,34 @@ img.logo-painel{
 
 
 
-/*Listagens*/
-.painel-btn-add{
-    background-color: #104a7b;
-    float: left;
-    margin: 0px 0px 0px 10px;
+/*
+    Listagens
+*****************************/
+
+.painel-tabela-cabecalho{
+    font-size: 1.1em;
 }
 
-.painel-cabecalho{
-    font-size: 1.4em;
-}
-.edit{
+.btn-edit{
     background: #104a7b;
 }
-.eye{
+.btn-eye{
     background: #3c763d;
 }
-.delete{
-    background: #e65a5a
+.btn-delete{
+    background: #e65a5a;
 }
 
-
-.actions delete{
-    
-}
-.actions{
+.btn-actions{
     padding: 8px;
-    color: #fff;
+    color: #999999;
     font-size: 1em;
     text-decoration: none;
     margin: 0px 2px;
     padding: 7px 12px;
-    /* text-align: center; */
+    border-radius: 2px
 }
-.actions:hover{
+.btn-actions:hover{
     text-decoration: none;
     color: #FFF;
 }
@@ -134,23 +128,42 @@ img.logo-painel{
 }
 
 /*FORMS*/
-.painel-alinha-btns-forms{
-    margin: 10px 20px;
-}
+
 .painel-label{
        display: block; 
 }
-.painel-input-size-25{
-    max-width: 25%;
-}
-.painel-input-size-35{
-    max-width: 85%;
-}
+
 .placeholder-right{
     text-align: right;
 }
 
 
+/* 
+   FORMULARIO EMPRESA
+**********************************/
+.painel-renderiza-logo{
+    max-width: 150px;
+}
+.painel-panel-logomarca{
+    max-width: 40%; 
+    text-align: center;
+}
+
+
+
+/*
+   BOTÕES
+**********************************/
+.painel-btn{
+  background: #3d4068;
+  border-color: #3d4068;
+  float:right;
+  margin: 0 0 10px 10px;
+  padding: 10px 20px;
+
+}   
+
+}   
 
 /* 
   Galeria produtos
@@ -194,12 +207,13 @@ input[type="file"] {
 /* --*/
 
 
-.painel-form-input{
-    margin-top: 10px;
+.painel-input{
+    margin: 10px 10px 10px 10px;
+
 }
 
 /*
-   CONFIGURAÇÕES
+   CONFIGURAÃ‡Ã•ES
 ***********************/
 .lista-configs{
     padding: 10px;
@@ -289,3 +303,9 @@ form .ng-invalid-cep {
 
 }
 
+/*
+    ROW  
+**************************/
+.painel-row{
+    margin-left: 80px;
+}    

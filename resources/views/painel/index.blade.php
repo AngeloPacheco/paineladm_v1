@@ -17,22 +17,20 @@
 
     </head>
     <body>
-
-    
-        <div class="topo">
-            <div class="dropdown user">
-               <div class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                   <img src="{{url('assets\painel\imgs\img-user.jpg')}}" alt="usuario" class="user img-circle">
-                   <p class="user-name">Nome do Usuário</p>
-                   <span class="caret"></span>
-               </div>
-               <ul class="dropdown-menu dp-menu" aria-labelledby="dropdownMenu1">
-                   <li><a href="#">Perfil</a></li>
-                   <li><a href="#">Sair</a></li>
-               </ul>
-            </div>
+      <div class="topo">
+        <div class="dropdown user">
+           <div class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+               <img src="{{url('assets\painel\imgs\img-user.jpg')}}" alt="usuario" class="user img-circle">
+               <p class="user-name">Nome do Usuário</p>
+               <span class="caret"></span>
+           </div>
+           <ul class="dropdown-menu dp-menu" aria-labelledby="dropdownMenu1">
+               <li><a href="#">Perfil</a></li>
+               <li><a href="#">Sair</a></li>
+           </ul>
         </div>
-         
+      </div>
+       
         
 
         <div class="container">
@@ -109,3 +107,6 @@
          <script src="{{url('assets/painel/js/setar-datas.js')}}"></script>
 
  </html>    
+
+ @yield('post-script-logradouros')
+ @yield('uploadLogomarca')

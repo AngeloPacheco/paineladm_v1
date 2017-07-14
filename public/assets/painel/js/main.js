@@ -76,79 +76,13 @@ $(document).ready(function() {
     return n.toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+\,)/g, "$1.");
   }
 
-// Logomarca empresa
- 
-    
-$("#imagem").on('change', function () {
-
-        if (typeof (FileReader) != "undefined") {
-
-            var image_holder = $("#logomarca");
-            image_holder.empty();
-
-            var reader = new FileReader();
-            reader.onload = function (e) {
-                $("<img />", {
-                    "src": e.target.result,
-                    "class": "img-thumbnail img-galeria"
-                }).appendTo(image_holder);
-
-            }
-            image_holder.show();
-            reader.readAsDataURL($(this)[0].files[0]);
-        } else {
-            alert("Seu navegador não renderiza essa imagem.");
-        }
-    });
-
-// Imagens produtos
-
-/*
-$(function() {
-    var imagesPreview = function(input, placeToInsertImagePreview) {
-
-        if (input.files) {
-            var filesAmount = input.files.length;
-
-            for (i = 0; i < filesAmount; i++) {
-                  
-                  var reader = new FileReader();
-                  
-
-                  reader.onload = function(event) {
-                      
-                               
-                     $('.galeria').append(
-                        '<div class = "col-lg-3 col-md-4 col-xs-6 thumb">').appendTo(placeToInsertImagePreview) 
-                        + '<img class="img-respponsive img-thumbnail" >'
-                        .attr('src', event.target.result).appendTo(placeToInsertImagePreview);
-
-                      
-                      //$($.parseHTML('<img class="img-respponsive img-thumbnail" >')).attr('src', event.target.result).appendTo(placeToInsertImagePreview);
-                      
-                
-                     
 
 
-                      //$($.parseHTML('<div class="galeria-input"> <input class=" form-control painel-input-galeria" type="text" id="titulo-img" name="titulo-img" placeholder="título da imagem">')).appendTo(placeToInsertImagePreview);
-                      //$($.parseHTML('<input class=" form-control painel-input-galeria" type="text" id="titulo-img" name="titulo-img" placeholder="título da imagem">')).appendTo(placeToInsertImagePreview);
-                   
-                     
-                },
-                reader.readAsDataURL(input.files[i]);
-            }
-        }
-    };
-    $('#imagem').on('change', function() {
-        imagesPreview(this, 'div.galeria');
-    });
-});
 
-*/
 $(document).ready(function() {
     if (window.File && window.FileList && window.FileReader) {
         
-        $("#imagem").on("change", function(e) {
+        $("#imagemALTERAR").on("change", function(e) {
         
             var files = e.target.files,
         
