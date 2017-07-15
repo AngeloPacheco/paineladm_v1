@@ -28,6 +28,19 @@ Route::get('/painel/categoria-produtos/delete/{id}', 'Painel\CategoriaProdutoCon
 /*   EMPRESA  */
 Route::resource('/painel/empresa', 'Painel\EmpresaController');
 
+/*  TRANSPORTADORAS    */
+Route::resource('/painel/transportadoras', 'Painel\TransportadoraController');
+Route::get('/painel/transportadoras/busca', 'Painel\TransportadoraController@busca');
+Route::post('/painel/transportadoras/busca', 'Painel\TransportadoraController@busca');
+Route::get('/painel/transportadoras/delete/{id}', 'Painel\TransportadoraController@destroy');
+
+/*   CATEGORIAS CONTAS A PAGAR */
+Route::get('/painel/categorias-contas-pagar/delete/{id}', 'Painel\CategoriaContasPagarController@destroy');
+Route::resource('/painel/categorias-contas-pagar', 'Painel\CategoriaContasPagarController');
+Route::get('/painel/categorias-contas-pagar/busca', 'Painel\CategoriaPagarController@busca');
+Route::post('/painel/categorias-contas-pagar/busca', 'Painel\CategoriaPagarController@busca');
+
+
 Route::get('/', function () {
     return view('welcome');
 });
