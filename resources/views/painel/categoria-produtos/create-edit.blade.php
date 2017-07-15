@@ -28,14 +28,16 @@
 
     
             {!! csrf_field()!!} 
-            <div class="form-group">
-                <label class="painel-label">Descrição</label>        
-               <input class="form-control" type='text' name="descricao" value="{{$categoria->descricao or old('descricao')}}" autofocus="" size=30>  
-            </div>    
-            
-            <hr>
-            
-             <a href="{{url('painel/categoria-produtos')}}" class="btn btn-primary painel-btn" title="Lista todas categorias de produtos"> 
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label class="painel-label">Descrição</label>        
+                       <input class="form-control" type='text' name="descricao" value="{{$categoria->descricao or old('descricao')}}" autofocus="" size=30>  
+                    </div>    
+                </div>        
+             </div>   
+
+             <a href="{{url('painel/categoria-produtos')}}" class="btn btn-primary painel-btn" title="Listar todas categorias"> 
                <span class="fa fa-list"></span>
             </a>
 

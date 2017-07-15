@@ -17,7 +17,7 @@
                         <a class="btn-actions btn-edit" href="{{route('categoria-produtos.edit', $categoria->id)}}">
                             <span class="fa fa-pencil" title="Editar"></span>
                         </a>
-                        <a class="btn-actions btn-delete" href="{{route('categoria-produtos.destroy', $categoria->id)}}">
+                        <a class="btn-actions btn-delete" href="categoria-produtos/delete/{{$categoria->id}}">
                            <span class="fa fa-trash" title="Excluir"></span>
                         </a>
                     </td>

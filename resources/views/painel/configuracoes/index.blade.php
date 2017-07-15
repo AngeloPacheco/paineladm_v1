@@ -66,7 +66,7 @@
         </div>
     
         <div class="col-md-4 col-sm-4 col-xs-12">
-            <a class="links" href="{{url('painel/forma-pagamentos')}}" title='Forma de Pagamentos'>  
+            <a class="links" href="{{url('painel/forma-de-pagamentos')}}" title='Forma de Pagamentos'>  
                 <div class="opcoes-configs">
                     <i class="fa fa-dollar" aria-hidden="true"></i>
                     <div class="titulo-configs">
@@ -80,7 +80,7 @@
     
     <div class="row">
         <div class="col-md-4 col-sm-4 col-xs-12">
-            <a class="links" href="{{url('painel/categorias-contas-pagar')}}" title='Categoras contas a pagar'>  
+            <a class="links" href="{{url('painel/categoria-contas-pagar')}}" title='Categorias contas a pagar'>  
                 <div class="opcoes-configs">
                     <i class="fa fa-tags" aria-hidden="true"></i>
                     <div class="titulo-configs">

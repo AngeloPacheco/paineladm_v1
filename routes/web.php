@@ -21,7 +21,7 @@ Route::get('/painel/configuracoes', 'Painel\ConfiguracaoController@index');
 Route::resource('/painel/medidas', 'Painel\MedidaController');
 Route::get('/painel/medidas/delete/{id}', 'Painel\MedidaController@destroy');
 
-/*   CATEGORIAS */
+/*   CATEGORIAS DE PRODUTOS */
 Route::resource('/painel/categoria-produtos', 'Painel\CategoriaProdutoController');
 Route::get('/painel/categoria-produtos/delete/{id}', 'Painel\CategoriaProdutoController@destroy');
 
@@ -35,10 +35,17 @@ Route::post('/painel/transportadoras/busca', 'Painel\TransportadoraController@bu
 Route::get('/painel/transportadoras/delete/{id}', 'Painel\TransportadoraController@destroy');
 
 /*   CATEGORIAS CONTAS A PAGAR */
-Route::get('/painel/categorias-contas-pagar/delete/{id}', 'Painel\CategoriaContasPagarController@destroy');
-Route::resource('/painel/categorias-contas-pagar', 'Painel\CategoriaContasPagarController');
-Route::get('/painel/categorias-contas-pagar/busca', 'Painel\CategoriaPagarController@busca');
-Route::post('/painel/categorias-contas-pagar/busca', 'Painel\CategoriaPagarController@busca');
+Route::get('/painel/categoria-contas-pagar/delete/{id}', 'Painel\CategoriaContasPagarController@destroy');
+Route::resource('/painel/categoria-contas-pagar', 'Painel\CategoriaContasPagarController');
+Route::get('/painel/categoria-contas-pagar/busca', 'Painel\CategoriaPagarController@busca');
+Route::post('/painel/categoria-contas-pagar/busca', 'Painel\CategoriaPagarController@busca');
+
+/*   FORMA DE PAGAMENTOS */
+Route::get('/painel/forma-pagamentos/delete/{id}', 'Painel\FormaPagamentoController@destroy');
+Route::resource('/painel/forma-de-pagamentos', 'Painel\FormaPagamentoController');
+Route::get('/painel/forma-de-pagamentos/busca', 'Painel\FormaPagamentoController@busca');
+Route::post('/painel/forma-de-pagamentos/busca', 'Painel\FormaPagamentoController@busca');
+
 
 
 Route::get('/', function () {

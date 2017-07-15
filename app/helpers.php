@@ -59,3 +59,38 @@ function existeCNPJTransportadora($cnpj){
     return false;
   }            
 }
+/* Validar se existe categoria de contas a pagar cadastrada*/
+function existeCategoriaContasPagar($descricao){
+  
+  $query = DB::table('categoria_pagar_contas')
+           ->select('categoria_pagar_contas.id')
+           ->where('categoria_pagar_contas.descricao', '=', $descricao)
+           ->get();
+
+  if (count($query) > 0){
+
+    return true;
+  
+  }else{
+
+    return false;
+  }            
+}
+
+/* Validar se existe forma de pagamentos já está cadastrada*/
+function existeFormaPagamento($descricao){
+  
+  $query = DB::table('forma_pagamentos')
+           ->select('forma_pagamentos.id')
+           ->where('forma_pagamentos.descricao', '=', $descricao)
+           ->get();
+
+  if (count($query) > 0){
+
+    return true;
+  
+  }else{
+
+    return false;
+  }            
+}
