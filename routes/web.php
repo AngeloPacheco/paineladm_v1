@@ -46,7 +46,10 @@ Route::resource('/painel/forma-de-pagamentos', 'Painel\FormaPagamentoController'
 Route::get('/painel/forma-de-pagamentos/busca', 'Painel\FormaPagamentoController@busca');
 Route::post('/painel/forma-de-pagamentos/busca', 'Painel\FormaPagamentoController@busca');
 
-
+/*   FORNECEDORES */
+Route::resource('/painel/fornecedores', 'Painel\FornecedorController');
+Route::get('/painel/fornecedores/busca', 'Painel\FornecedorController@busca');
+Route::post('/painel/fornecedores/busca', 'Painel\FornecedorController@busca');
 
 Route::get('/', function () {
     return view('welcome');

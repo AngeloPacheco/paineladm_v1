@@ -52,10 +52,10 @@
                                 <a class="painel-fa" href="{{url('painel/')}}" title="Página inicial"><i class="fa fa-home" aria-hidden="true"> </i> <span style="margin-left:10px;">Home</span>  </a>
                             </li>
                             <li>
-                                <a class="painel-fa"href="#"> <i class="fa fa-dropbox " aria-hidden="true"> </i> <span style="margin-left:10px;">Produtos</span> </a>
+                                <a class="painel-fa" href="{{url('painel/produtos')}}" title="Produtos"> <i class="fa fa-dropbox " aria-hidden="true"> </i> <span style="margin-left:10px;">Produtos</span> </a>
                             </li>
                             <li>
-                                <a class="painel-fa" href="#"> <i class="fa fa-industry" aria-hidden="true"> </i> <span style="margin-left:10px;"> Fornecedores</span> </a>
+                                <a class="painel-fa" href="{{url('painel/fornecedores')}}" title="Fornecedores"> <i class="fa fa-industry" aria-hidden="true"> </i> <span style="margin-left:10px;"> Fornecedores</span> </a>
                             </li>
 
 
