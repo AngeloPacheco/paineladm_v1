@@ -37,7 +37,7 @@
 
                             <div class="form-group painel-input">
                                 <label class="painel-label">Nome Fantasia</label>
-                                 <input size="45" class="form-control" type='text' name="nome_fantasia" value="{{$transportadora->nome_fantasia or old('nome_fantasia')}}">  
+                                 <input size="41" class="form-control" type='text' name="nome_fantasia" value="{{$transportadora->nome_fantasia or old('nome_fantasia')}}">  
                             </div>
                              
                             <div class="form-group painel-input">
@@ -63,7 +63,7 @@
                         
                             <div class="form-group painel-input">
                                 <label class="painel-label">Logradouro</label>
-                                <input size="50" class="form-control" type='text' id="logradouro" name="logradouro" value="{{$transportadora->logradouro or old('logradouro')}}">  
+                                <input size="51" class="form-control" type='text' id="logradouro" name="logradouro" value="{{$transportadora->logradouro or old('logradouro')}}">  
                              </div>
                              
                             <div class="form-group painel-input">
@@ -88,7 +88,7 @@
                              
                             <div class="form-group painel-input">
                                 <label class="painel-label">Estado</label>
-                                <input size="10" class="form-control" type='text' id='uf' name='uf' value="{{$transportadora->uf or old('uf')}}">  
+                                <input size="5" class="form-control" type='text' id='uf' name='uf' value="{{$transportadora->uf or old('uf')}}">  
                             </div>
                         </div>    
                     </div>    

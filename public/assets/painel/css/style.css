@@ -133,9 +133,6 @@ img.logo-painel{
        display: block; 
 }
 
-.placeholder-right{
-    text-align: right;
-}
 
 
 /* 
@@ -156,7 +153,6 @@ img.logo-painel{
 **********************************/
 .painel-btn{
   background: #3d4068;
-  border-color: #3d4068;
   float:right;
   margin: 0 0 10px 10px;
   padding: 10px 20px;
@@ -208,7 +204,7 @@ input[type="file"] {
 
 
 .painel-input{
-    margin: 10px 10px 10px 10px;
+    margin-top: 10px;
 
 }
 
@@ -282,8 +278,18 @@ input[type="file"] {
 }
 
 
+/*
+        FORMLULARIO PRODUTOS
 /* -----------------------------*/
+.painel-checkbox-produtos{
+   margin: 30px 10px 0 30px;
+}
+.placeholder-right{
+    text-align: right;
+}
 
+
+/*-------------------------------/
 
 form .ng-invalid-cep {
   border: solid 1px red;
@@ -300,7 +306,7 @@ form .ng-invalid-cep {
 }
 .panel-check-credores{
     
-
+  
 }
 
 /*

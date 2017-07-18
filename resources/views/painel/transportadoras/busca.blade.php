@@ -5,6 +5,18 @@
     <div class="col-xs-12">
 
         <h1 class=''>Transportadoras</h1>
+        
+        <div class="form-search">
+            <form class="form-inline" name="formPesquisa" method="post" role="form" action="{{url('painel/transportadoras/busca')}}">
+
+                <input class="form-control" type="text" name="descricao" value="" placeholder="Pesquisar"  title='Pesquisa por Razão Social, Nome Fantasia ou CNPJ' autofocus="" size="20">
+                 {!! csrf_field()!!}
+                <button class="btn btn-primary painel-btn-pesquisar" type="submit" title="Pesquisar">
+                        <span class="fa fa-search"></span>
+                </button>
+            </form>
+        </div>
+
         <h5 class="msg-busca">{{$msg}}<h5>
 
         <table class="table table-striped">
@@ -29,7 +41,7 @@
                         <a class="btn-actions btn-edit" href="{{route('transportadoras.edit', $transportadora->id)}}">
                             <span class="fa fa-pencil" title="Editar"></span>
                         </a>
-                        <a class="btn-actions btn-delete" href="{{route('transportadoras.show', $transportadora->id)}}">
+                        <a class="btn-actions btn-eye" href="{{route('transportadoras.show', $transportadora->id)}}">
                            <span class="fa fa-eye" title="Detalhes"></span>
                         </a>
                         <a class="btn-actions btn-delete" href="transportadoras/delete/{{$transportadora->id}}">

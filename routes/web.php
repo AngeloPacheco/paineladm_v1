@@ -50,6 +50,14 @@ Route::post('/painel/forma-de-pagamentos/busca', 'Painel\FormaPagamentoControlle
 Route::resource('/painel/fornecedores', 'Painel\FornecedorController');
 Route::get('/painel/fornecedores/busca', 'Painel\FornecedorController@busca');
 Route::post('/painel/fornecedores/busca', 'Painel\FornecedorController@busca');
+Route::get('/painel/fornecedores/delete/{id}', 'Painel\FornecedorController@destroy');
+
+/*   PRODUTOS    */
+Route::resource('/painel/produtos', 'Painel\ProdutoController');
+Route::get('/painel/produtos/busca', 'Painel\ProdutoController@busca');
+Route::post('/painel/produtos/busca', 'Painel\ProdutoController@busca');
+Route::get('/painel/produtos/delete/{id}', 'Painel\ProdutoController@destroy');
+
 
 Route::get('/', function () {
     return view('welcome');

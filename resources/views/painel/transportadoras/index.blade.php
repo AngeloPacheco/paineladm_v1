@@ -3,7 +3,9 @@
  
 <div class="row painel-row">
     <div class="col-xs-12">
+        
         <h1>Transportadoras</h1>
+        
         <div class="form-search">
             <form class="form-inline" name="formPesquisa" method="post" role="form" action="{{url('painel/transportadoras/busca')}}">
 

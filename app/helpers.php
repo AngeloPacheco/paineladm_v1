@@ -94,3 +94,39 @@ function existeFormaPagamento($descricao){
     return false;
   }            
 }
+
+/* Validar se existe CNPJ de fornecedor já cadastrado*/
+function existeCNPJFornecedor($cnpj){
+  
+  $query = DB::table('fornecedores')
+           ->select('fornecedores.id')
+           ->where('fornecedores.cnpj', '=', $cnpj)
+           ->get();
+
+  if (count($query) > 0){
+
+    return true;
+  
+  }else{
+
+    return false;
+  }            
+}
+
+/* Validar se  produto já está cadastrado*/
+function existeProduto($descricao){
+  
+  $query = DB::table('produtos')
+           ->select('produtos.id')
+           ->where('produtos.descricao', '=', $descricao)
+           ->get();
+
+  if (count($query) > 0){
+
+    return true;
+  
+  }else{
+
+    return false;
+  }            
+}

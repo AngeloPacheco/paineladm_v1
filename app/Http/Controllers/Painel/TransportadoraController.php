@@ -166,12 +166,11 @@ class TransportadoraController extends Controller
         if (count($transportadoras) > 0){
              
             $msg = 'Sistema informa: A pesquisa retornou '. count($transportadoras) . ' registro(s)';
-
             return view('painel.transportadoras.busca', compact('title','transportadoras','msg')); 
-        }
+        }else{
 
             $msg = 'Sistema informa: A pesquisa não retornou registro(s)';
-
             return view('painel.transportadoras.busca', compact('title', 'transportadoras','msg'));
+        }    
     }
 }

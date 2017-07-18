@@ -110,3 +110,4 @@
 
  @yield('post-script-logradouros')
  @yield('uploadLogomarca')
+ @yield('uploadImagensProdutos')
