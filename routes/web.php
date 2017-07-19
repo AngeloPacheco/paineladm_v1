@@ -58,6 +58,13 @@ Route::get('/painel/produtos/busca', 'Painel\ProdutoController@busca');
 Route::post('/painel/produtos/busca', 'Painel\ProdutoController@busca');
 Route::get('/painel/produtos/delete/{id}', 'Painel\ProdutoController@destroy');
 
+/*   COMPRAS    */
+Route::resource('/painel/compras', 'Painel\CompraController');
+Route::get('/painel/compras/busca', 'Painel\CompraController@busca');
+Route::post('/painel/compras/busca', 'Painel\CompraController@busca');
+Route::get('/painel/compras/delete/{id}', 'Painel\CompraController@destroy');
+
+
 
 Route::get('/', function () {
     return view('welcome');

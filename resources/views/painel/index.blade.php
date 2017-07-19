@@ -48,16 +48,22 @@
                                 <a class="painel-fa" href="#menu-toggle"  id="menu-toggle" style="margin-top:20px;float:right;" > <i class="fa fa-bars " style="font-size:20px !Important;" aria-hidden="true" aria-hidden="true"></i></a>
                         
                             </li>
+                            
                             <li>
                                 <a class="painel-fa" href="{{url('painel/')}}" title="Página inicial"><i class="fa fa-home" aria-hidden="true"> </i> <span style="margin-left:10px;">Home</span>  </a>
                             </li>
+                            
                             <li>
                                 <a class="painel-fa" href="{{url('painel/produtos')}}" title="Produtos"> <i class="fa fa-dropbox " aria-hidden="true"> </i> <span style="margin-left:10px;">Produtos</span> </a>
                             </li>
+                            
                             <li>
                                 <a class="painel-fa" href="{{url('painel/fornecedores')}}" title="Fornecedores"> <i class="fa fa-industry" aria-hidden="true"> </i> <span style="margin-left:10px;"> Fornecedores</span> </a>
                             </li>
 
+                             <li>
+                                <a class="painel-fa" href="{{url('painel/compras')}}" title="Compras de produtos"> <i class="fa fa-shopping-cart" aria-hidden="true"> </i> <span style="margin-left:10px;"> Compras</span> </a>
+                            </li>
 
                             <li>
                                 <a class="painel-fa" href="{{url('painel/configuracoes')}}" title="Configurações do sistema"> <i class="fa fa-cog" aria-hidden="true"> </i> <span style="margin-left:10px;"> Configurações</span> </a>
@@ -100,14 +106,14 @@
         <!-- JS Bootstrap -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>  
         <script src="{{url('assets/all/js/bootstrap.min.js')}}"></script>
-        <script src="{{url('assets/painel/js/main.js')}}"></script>
         <script src="{{url('assets/painel/js/jquery.maskedinput.min.js')}}"></script>
-      
          <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
-         <script src="{{url('assets/painel/js/setar-datas.js')}}"></script>
+         
 
  </html>    
 
  @yield('post-script-logradouros')
  @yield('uploadLogomarca')
  @yield('uploadImagensProdutos')
+ @yield('CalculoPrecoProduto')
+ @yield('setar-datas')
